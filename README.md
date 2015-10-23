@@ -31,7 +31,7 @@ Increments a counter with `value` or 1
 `config` is: 
 - **user** - user key, or env STATEFUL_USER
 - **token** - user token, or env STATEFUL_TOKEN
-- **timeout** - request timeput, or env STATEFUL_TIMEOUT, default: 5000 ms
+- **timeout** - request timeout, or env STATEFUL_TIMEOUT, default: 5000 ms
 
 ### counter.set(counter, value, [config])
 
