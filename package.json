@@ -1,0 +1,32 @@
+{
+  "name": "statefulco",
+  "version": "0.0.1",
+  "description": "Nodejs Stateful.co service interface",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -t 6000",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mitica/statefulco.git"
+  },
+  "keywords": [
+    "stateful",
+    "stateful.co",
+    "service"
+  ],
+  "author": "Dumitru Cantea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mitica/statefulco/issues"
+  },
+  "homepage": "https://github.com/Mitica/statefulco",
+  "dependencies": {
+    "bluebird": "^2.10.2",
+    "request": "^2.65.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3"
+  }
+}
