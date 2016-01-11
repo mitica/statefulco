@@ -8,23 +8,18 @@ A Nodejs client for stateful.co service
 var stateful = require('statefulco');
 var counter = stateful.counter;
 
-counter.inc('counter-name')
-  .then(function(result){
-    // result is the currenct value
-  });
+counter.inc('counter-name', function(error, value) {
+  // value is the currenct value
+});
 
-counter.set('counter-name', 10)
-  .then(function(){
-    // success: counter-name == 10
-  })
-  .catch(function(error){
-    // an error occurred
-  });
+counter.set('counter-name', 10, function(error, value) {
+  // success: counter-name == 10
+});
 ```
 
 ## API
 
-### counter.inc(counter, [value], [config])
+### counter.inc(counter, [value], [config], callback)
 
 Increments a counter with `value` or 1
 
@@ -33,6 +28,6 @@ Increments a counter with `value` or 1
 - **token** - user token, or env STATEFUL_TOKEN
 - **timeout** - request timeout, or env STATEFUL_TIMEOUT, default: 5000 ms
 
-### counter.set(counter, value, [config])
+### counter.set(counter, value, [config], callback)
 
 Set counter's value.

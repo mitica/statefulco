@@ -1,6 +1,6 @@
 {
   "name": "statefulco",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Nodejs Stateful.co service interface",
   "main": "./lib/index.js",
   "scripts": {
@@ -22,10 +22,7 @@
     "url": "https://github.com/Mitica/statefulco/issues"
   },
   "homepage": "https://github.com/Mitica/statefulco",
-  "dependencies": {
-    "bluebird": "^2.10.2",
-    "request": "^2.65.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "^2.3.3"
   }
